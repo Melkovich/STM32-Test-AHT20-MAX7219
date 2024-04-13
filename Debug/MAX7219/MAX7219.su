@@ -1,0 +1,5 @@
+../MAX7219/MAX7219.c:68:6:Test_Alphabet	32	static
+../MAX7219/MAX7219.c:91:6:Test_Blink_Heart	32	static
+../MAX7219/MAX7219.c:121:6:Test_Romain_Slide	40	static
+../MAX7219/MAX7219.c:156:6:Display_Print_Matrice	200	static
+../MAX7219/MAX7219.c:382:6:Display_Raw_Matrice	40	static
