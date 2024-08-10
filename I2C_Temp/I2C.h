@@ -8,6 +8,16 @@
 #ifndef I2C_H_
 #define I2C_H_
 
+typedef struct {
+
+	I2C_HandleTypeDef *hi2c;
+	UART_HandleTypeDef* huart;
+	uint8_t rawData[6];
+	float humidite;
+	float temperature;
+
+} AHT20;
+
 /*--------------------------------------------- Includes -----------------------------------------------------------------*/
 #include "MAX7219.h"
 
@@ -19,16 +29,16 @@
 
 
 /*--------------------------------------------- Fonctions ----------------------------------------------------------------*/
-void UART_Message(char * buffer, UART_HandleTypeDef* huart2);
-void AHT_Init(I2C_HandleTypeDef* hi2c1,UART_HandleTypeDef* huart2);
-void AHT_TrigMeasure(I2C_HandleTypeDef* hi2c1,UART_HandleTypeDef* huart2);
-void AHT_Readdata(I2C_HandleTypeDef* hi2c1,UART_HandleTypeDef* huart2,Matrix *device);
-void AHT_Reset(I2C_HandleTypeDef* hi2c1,UART_HandleTypeDef* huart2);
-void AHT_Check(I2C_HandleTypeDef* hi2c1,UART_HandleTypeDef* huart2);
-void AHT_IsBusy(I2C_HandleTypeDef* hi2c1,UART_HandleTypeDef* huart2);
+void UART_Message(char * buffer, UART_HandleTypeDef* huart);
+void AHT_Init(I2C_HandleTypeDef* hi2c,UART_HandleTypeDef* huart,AHT20* device);
+void AHT_TrigMeasure(AHT20* device);
+void AHT_Readdata(AHT20* device);
+void AHT_Reset(AHT20* device);
+void AHT_Check(AHT20* device);
+void AHT_IsBusy(AHT20* device);
 
-
-
+void MATRIX_Display_Temperature(AHT20* device, Matrix* Matrice,int choix);
+void MATRIX_Display_Humidity(AHT20* device, Matrix* Matrice,int choix);
 
 
 

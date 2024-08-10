@@ -1,8 +1,7 @@
-../I2C_Temp/I2C.c:15:6:UART_Message	24	static
-../I2C_Temp/I2C.c:22:6:UART_FloatToDisplay	64	static
-../I2C_Temp/I2C.c:68:6:AHT_Init	40	static
-../I2C_Temp/I2C.c:96:6:AHT_TrigMeasure	40	static
-../I2C_Temp/I2C.c:114:6:AHT_Readdata	64	static
-../I2C_Temp/I2C.c:148:6:AHT_Reset	32	static
-../I2C_Temp/I2C.c:159:6:AHT_Check	40	static
-../I2C_Temp/I2C.c:175:6:AHT_IsBusy	32	static
+../I2C_Temp/I2C.c:18:6:MATRIX_Display_Temperature	40	static
+../I2C_Temp/I2C.c:33:6:MATRIX_Display_Humidity	40	static
+../I2C_Temp/I2C.c:87:6:AHT_Init	48	static
+../I2C_Temp/I2C.c:122:6:AHT_TrigMeasure	40	static
+../I2C_Temp/I2C.c:141:6:AHT_Readdata	40	static
+../I2C_Temp/I2C.c:175:6:AHT_Reset	32	static
+../I2C_Temp/I2C.c:207:6:AHT_IsBusy	32	static

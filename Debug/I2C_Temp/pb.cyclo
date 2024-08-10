@@ -1,1 +1,4 @@
-../I2C_Temp/pb.c:16:6:pb_launcher	5
+../I2C_Temp/pb.c:17:6:Task_Display	5
+../I2C_Temp/pb.c:52:6:Task_Display_Temperature	3
+../I2C_Temp/pb.c:77:6:Task_Display_Humidity	3
+../I2C_Temp/pb.c:104:6:Task_Display_3	9

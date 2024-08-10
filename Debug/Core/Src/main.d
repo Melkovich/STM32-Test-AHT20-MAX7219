@@ -29,7 +29,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/MAX7219/MAX7219.h \
- C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/pb.h
+ C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/pb.h \
+ C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/I2C.h \
+ C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/I2C.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -62,3 +64,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/MAX7219/MAX7219.h:
 C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/pb.h:
+C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/I2C.h:
+C:/Users/33789/Desktop/Projet\ stm32/Workspace/F411RE_MAX7219_MATRICE_LED/I2C_Temp/I2C.h:

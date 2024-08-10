@@ -20,6 +20,7 @@
 #include "main.h"
 #include "MAX7219.h"
 #include "pb.h"
+#include "I2C.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -106,18 +107,17 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   Matrix Matrix;
+  AHT20 aht;
 
-  AHT_Init(&hi2c1, &huart2);
+  AHT_Init(&hi2c1, &huart2,&aht);
   MAX7219_init(&hspi1,&Matrix);
+  Display_Reset_Data_Matrice_All(&Matrix);
+
 
   while (1)
   {
-//	  Test_Blink_Heart(&Matrix);
-//	 Test_Romain_Slide(&Matrix);
-//	  Test_Alphabet(&Matrix, 41);
-//	  Display_Print_Matrice(&Matrix,"12.24d",DEFAULT);
-	  pb_launcher(&huart2, &hi2c1,&Matrix);
 
+	  Task_Display_3(&aht, &Matrix);
 
     /* USER CODE END WHILE */
 
